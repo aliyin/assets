@@ -1,0 +1,302 @@
+.kepala {
+color: #ffffff; font-family: 'Merriweather', serif; font-size: 30px; font-weight: 300; line-height: 40px;text-align: center; text-shadow: #000 2px -1px;
+}
+
+.bayangan {
+text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
+             0px 6px 13px rgba(0,0,0,0.1),
+             0px 16px 23px rgba(0,0,0,0.1);
+}
+
+.bayangan-kotak{
+-webkit-box-shadow: 0px 9px 8px -6px rgba(105,87,105,1);
+-moz-box-shadow: 0px 9px 8px -6px rgba(105,87,105,1);
+box-shadow: 0px 9px 8px -6px rgba(105,87,105,1);
+}
+
+.raleway {
+    font-family: "Raleway"!important;
+}
+
+
+#transisi{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-thumbnail{
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.thumbnail{
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#judul{
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+
+#deskripsi{
+  vertical-align: middle;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.thumbnail:hover #judul{
+   visibility: hidden;
+   opacity: 0;
+}
+
+.thumbnail:hover .rating{
+    top:60%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.thumbnail:hover .movie_type{
+    right: 80%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.thumbnail:hover .country{
+    top:-10%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.thumbnail:hover #deskripsi{
+  visibility: visible;
+  opacity: 1;
+}
+
+.thumbnail:hover .bungkus-judul{
+  height:110px;
+  bottom:30%;
+  cursor: pointer;
+}
+
+.thumbnail:hover .img-thumbnail{
+  border-color: #6699ff;
+  background-color: #6699ff;
+  cursor: pointer;
+}
+
+.thumbnail:hover{
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(102,153,255, 0.65);
+-moz-box-shadow:    0px 0px 30px 0px rgba(102,153,255, 0.65);
+box-shadow:         0px 0px 30px 0px rgba(102,153,255, 0.65);
+border-color: #6699ff;
+  background-color: #6699ff;
+  cursor: pointer;
+}
+
+.kotak{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.bungkus-judul{
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position:absolute;
+    height:40px;
+    bottom:49%;
+    left:8%;
+    width:166px;
+    background:url('/themes/shinichi/assets/images/black.png');
+}
+
+
+@media screen and (max-width: 768px) {
+    .bungkus-judul{
+        bottom:40%;
+    }
+}
+
+.notifikasi{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    width:100%;
+    top:0;
+    text-align:center;
+    position:fixed;
+    z-index: 999;
+}
+
+.body {
+  background: -webkit-radial-gradient(center, #003399, #000000) no-repeat center center fixed;
+  background: -moz-radial-gradient(center, #003399, #000000) no-repeat center center fixed;
+  background: -o-radial-gradient(center, #003399, #000000) no-repeat center center fixed;
+  background: -ms-radial-gradient(center, #003399, #000000) no-repeat center center fixed;
+  background: radial-gradient(center, #003399, #000000) no-repeat center center fixed;
+  
+}
+
+.meta-post {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.header {
+	color:white;
+	background: url('../../../../storage/app/media/header/bebas-copyright.jpg') no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  padding: 10px;
+  padding-top:60px;
+  padding-bottom:80px;
+}
+
+nav.menus {
+	background-color:#333399;
+    padding: 10px;
+}
+
+nav.menus ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav.menus ul li {
+    display: inline-block;
+}
+
+nav.menus ul li a {
+    display: block;
+    padding: 3px 7px;
+    color: #fff;
+}
+
+nav.menus ul li a:hover, nav.menus ul li a:focus{
+    text-decoration: none;
+    background-color: #006699;
+    color: #fff;
+}
+
+article.posts {
+    padding: 10px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+aside.widgets {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+aside.widgets ul {
+    margin:0;
+    padding:0;
+}
+aside.widgets li {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.widget-title {
+  border-bottom: 4px solid #339999;
+  padding-bottom: 5px;
+  margin-top: -3px;
+}
+
+footer.copyright {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+#img_container{
+    overflow: hidden;
+    display:inline-block;
+    position:relative;
+    text-align:center;
+    overflow:hidden;
+}
+
+.rating{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    position:absolute;
+    top:1px;
+    left:16px;/* old 8.2% */
+    width:auto;
+    height:auto;
+}
+
+.movie_type{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    position:absolute;
+    top:1px;
+    right:8%;
+    width:auto;
+    height:auto;
+}
+
+.country{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    position:absolute;
+    top:20px;
+    right:8%;
+    width:auto;
+    height:auto;
+}
+
+/*
+ * Load Twitter Bootstrap.
+ */
+ @import 'twbs/bootstrap';
+/*
+*
+ * Load Font Awesome.
+ *
+*@import 'fa/font-awesomes';
+*/
+@font-face {
+  @font-family: "Raleway",sans-serif;
+  font-style:  Regular;
+  src: url('font/Raleway-Regular.ttf') format('truetype');
+}
+@import 'site/theme';
